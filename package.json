@@ -1,0 +1,25 @@
+{
+  "name": "rollup-plugin-force-binding",
+  "version": "1.0.0",
+  "description": "Force RollupJS to use an existing import rather than create a new binding.",
+  "main": "dist/index.cjs.js",
+  "jsnext:main": "src/index.js",
+  "keywords": [
+    "rollupjs",
+    "rollup-plugin",
+    "import",
+    "export",
+    "bind"
+  ],
+  "author": "Patrick McGuckin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-stream": "^1.19.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
