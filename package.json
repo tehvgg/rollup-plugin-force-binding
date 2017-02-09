@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-force-binding",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Force RollupJS to use an existing import rather than create a new binding.",
   "main": "dist/index.cjs.js",
   "jsnext:main": "src/index.js",
