@@ -10,8 +10,10 @@ function forceBinding(moduleList) {
       // get the module name w/o file extension
       moduleName = importee.split(/[\/\\]/).pop().split('.')[0];
       if (~moduleList.indexOf(moduleName)) {
+        // if true, tells load() to store the next path
         storeId = !moduleLocations.hasOwnProperty(moduleName);
         if (!storeId) {
+          // return the forced binding if we have it
           return moduleLocations[moduleName];
         }
       }
@@ -20,9 +22,9 @@ function forceBinding(moduleList) {
     load: function load(id) {
       if (storeId) {
         moduleLocations[moduleName] = id;
-        console.log('Stored location for ' + moduleName + ': ' + id);
         storeId = false;
       }
+      // always return null, we're only modifying paths
       return null;
     }
   };
